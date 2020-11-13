@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("I'm really really working!!"),console.log("I'm working!")})();
+(()=>{"use strict";document.querySelector("body").style.background="green",initialPageLoad(),console.log("I'm working!")})();

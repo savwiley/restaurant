@@ -1,7 +1,4 @@
-function initialPageLoad () {
-    return console.log("I'm really really working!!");
-}
-
+const body = document.querySelector("body");
 
 
 

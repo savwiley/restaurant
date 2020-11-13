@@ -1,1 +1,1 @@
-console.log("I'm working!");
+(()=>{"use strict";console.log("I'm really really working!!"),console.log("I'm working!")})();

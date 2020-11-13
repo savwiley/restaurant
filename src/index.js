@@ -1,7 +1,11 @@
+import initialPageLoad from "./module/initialPageLoad";
+
+initialPageLoad();
+
 console.log("I'm working!")
 
 /*
-Restaurant them ideas!
+Restaurant theme ideas!
 
 Star Trek! There are tons of foods listed online.
 

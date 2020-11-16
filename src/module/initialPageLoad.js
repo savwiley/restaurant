@@ -1,19 +1,19 @@
-const content = document.querySelector("body");
+const content = document.querySelector("div#content");
 
-const createHeader = (() => {
+function createHeader() {
     const header = document.createElement("header");
         header.setAttribute("class", "header")
+        const logo = document.createElement("img");
+            logo.setAttribute("src", "../images/ice-cream.svg");
+            logo.setAttribute("id", "logo");
+            header.appendChild(logo);
+        const name = document.createElement("h1");
+            name.textContent = "The Ice Cream Shoppe";
+            header.appendChild(name);
         content.appendChild(header);
-    const logo = document.createElement("img");
-        logo.setAttribute("src", "../images/ice-cream.svg");
-        logo.setAttribute("id", "logo");
-        header.appendChild(logo);
-    const name = document.createElement("h1");
-        name.textContent = "The Ice Cream Shoppe";
-        header.appendChild(name);
-})();
+};
 
-const createNav = (() => {
+function createNav() {
     const nav = document.createElement("div");
         nav.setAttribute("class", "nav");
             const homeBtn = document.createElement("div");
@@ -32,23 +32,50 @@ const createNav = (() => {
                 contactBtn.textContent = "Contact";
                 nav.appendChild(contactBtn);
         content.appendChild(nav);
-})();
+};
 
-const createFooter = (() => {
+function createBody() {
+    const mainBody = document.createElement("main");
+        mainBody.setAttribute("id", "mainBody");
+            const mainContent = document.createElement("p");
+            mainContent.setAttribute("class", "mainContent");
+            mainBody.appendChild(mainContent);
+        content.appendChild(mainBody);
+};
+
+function createFooter() {
     const footer = document.createElement("footer");
         footer.setAttribute("class", "footer");
-        footer.innerHTML = '<a href="https://github.com/savwiley/restaurant">by savwiley</a>';
-        footer.innerHTML += " | "
-        footer.innerHTML += "made with webpack \r\n"
-        footer.innerHTML += "images from pexels";
-        footer.innerHTML += " | "
-        footer.innerHTML += "logo from freepik \r\n"
+        const gitCred = document.createElement("a");
+            gitCred.innerHTML = "by savwiley";
+            gitCred.href = "https://github.com/savwiley/restaurant";
+            footer.appendChild(gitCred);
+        const wpCred = document.createElement("a");
+            wpCred.innerHTML = "made with webpack";
+            wpCred.href = "https://github.com/savwiley/restaurant";
+            footer.appendChild(wpCred);
+        const pexelsCred = document.createElement("a");
+            pexelsCred.innerHTML = "images from pexels";
+            pexelsCred.href = "https://github.com/savwiley/restaurant";
+            footer.appendChild(pexelsCred);
+        const logoCred = document.createElement("a");
+            logoCred.innerHTML = "logo from freepik";
+            logoCred.href = "https://github.com/savwiley/restaurant";
+            footer.appendChild(logoCred);
         content.appendChild(footer);
+};
+
+const initialPageLoad = (() => {
+    createHeader();
+    createNav();
+    createBody();
+    createFooter();
 })();
 
 
 export default initialPageLoad;
 
-/* maybe change links to logo images */
+/* maybe change links to logo images 
+maybe add social media to footer*/
 
 /* images are too large for git, figure it out */

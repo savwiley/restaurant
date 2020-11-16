@@ -58,6 +58,29 @@ h1 {
     cursor:default;
 }
 
+.nav {
+    width: 100vw;
+    background: var(--lightblue);
+    border-bottom: 5px solid var(--red);
+    display:flex;
+}
+.navBtn {
+    display:inline-flex;
+    width: 100%;
+    justify-content: center;
+    background:transparent;
+    text-shadow: 1px 1px 0px var(--white);
+    text-decoration:none;
+    font-family:'Shrikhand', cursive;
+    font-size: 1.5em;
+    cursor:pointer;
+    transition: all 0.5s;
+}
+.navBtn:hover {
+    background: var(--darkblue);
+    color: var(--white);
+    text-shadow: 1px 1px 0px var(--red);
+}
 
 
 

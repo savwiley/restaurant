@@ -1,17 +1,38 @@
-const content = document.querySelector("div#content");
+const content = document.querySelector("body");
 
-const createHeader = ((img) => {
+const createHeader = (() => {
     const header = document.createElement("header");
         header.setAttribute("class", "header")
         content.appendChild(header);
     const logo = document.createElement("img");
-        logo.setAttribute("src", img);
+        logo.setAttribute("src", "../images/ice-cream.svg");
         logo.setAttribute("id", "logo");
         header.appendChild(logo);
     const name = document.createElement("h1");
         name.textContent = "The Ice Cream Shoppe";
         header.appendChild(name);
-})("../images/ice-cream.svg");
+})();
+
+const createNav = (() => {
+    const nav = document.createElement("div");
+        nav.setAttribute("class", "nav");
+            const homeBtn = document.createElement("div");
+                homeBtn.setAttribute("class", "navBtn");
+                homeBtn.setAttribute("id", "homeBtn");
+                homeBtn.textContent = "Home";
+                nav.appendChild(homeBtn);
+            const menuBtn = document.createElement("div");
+                menuBtn.setAttribute("class", "navBtn");
+                menuBtn.setAttribute("id", "menuBtn");
+                menuBtn.textContent = "Menu";
+                nav.appendChild(menuBtn);
+            const contactBtn = document.createElement("div");
+                contactBtn.setAttribute("class", "navBtn");
+                contactBtn.setAttribute("id", "contactBtn");
+                contactBtn.textContent = "Contact";
+                nav.appendChild(contactBtn);
+        content.appendChild(nav);
+})();
 
 const createFooter = (() => {
     const footer = document.createElement("footer");
@@ -29,3 +50,5 @@ const createFooter = (() => {
 export default initialPageLoad;
 
 /* maybe change links to logo images */
+
+/* images are too large for git, figure it out */

@@ -1,0 +1,78 @@
+:root {
+    --white: #F1FAEE;
+    --lightblue: #A8DADC;
+    --medblue: #457B9D;
+    --darkblue: #1D3557;
+    --red: #E63946;
+}
+* {
+    background: var(--white);
+    color: var(--darkblue);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    background:transparent;
+}
+
+.header {
+    width: 100vw;
+    height: 50vh;
+    background: url('../images/pexels-lukas-1352271.jpg'), var(--lightblue);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+}
+#logo{
+    height: 150px;
+    width: 150px;
+    background: transparent;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+h1 {
+    background: transparent;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px var(--darkblue);
+    color: var(--white);
+    cursor:default;
+    font-size: 3em;
+    font-family:'Shrikhand', cursive;
+}
+.header:hover #logo {
+    margin-top: 10px;
+}
+
+.footer {
+    position:absolute;
+    bottom: 0;
+    background: var(--lightblue);
+    padding: 10px 0;
+    width: 100vw;
+    text-align:center;
+    white-space: pre;
+    font-size: 0.7em;
+    font-variant:small-caps;
+    font-weight:bold;
+    border-top: 5px solid var(--red);
+    cursor:default;
+}
+
+
+
+
+/*
+PALETTE FROM COOLORS.CO
+
+#E63946 - Imperial Red
+#F1FAEE - Honeydew
+#A8DADC - Powder Blue
+#457B9D - Celadon Blue
+#1D3557 - Prussian Blue
+
+https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557
+
+
+For logo (freepik): https://www.flaticon.com/search?word=ice%20cream
+
+*/

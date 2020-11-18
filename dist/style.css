@@ -1,24 +1,26 @@
+/* GENERAL */
+
 :root {
     --white: #F1FAEE;
     --lightblue: #A8DADC;
     --medblue: #457B9D;
     --darkblue: #1D3557;
     --red: #E63946;
+    --font: 'Shrikhand', cursive;
 }
 * {
     background: var(--white);
     color: var(--darkblue);
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
-a {
-    background:transparent;
-}
+a {background:transparent;}
+
+/* HEADER */
 
 .header {
-    position: absolute;
-    top: 0;
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     background: url('../images/pexels-lukas-1352271.jpg'), var(--lightblue);
     background-position: center;
@@ -39,41 +41,14 @@ h1 {
     color: var(--white);
     cursor:default;
     font-size: 3em;
-    font-family:'Shrikhand', cursive;
+    font-family: var(--font);
 }
-.header:hover #logo {
-    margin-top: 10px;
-}
+.header:hover #logo {margin-top: 10px;}
 
-.footer {
-    position:fixed;
-    bottom: 0;
-    background: var(--lightblue);
-    padding: 10px 0;
-    width: 100vw;
-    text-align:center;
-    white-space: pre;
-    font-size: 0.7em;
-    font-variant:small-caps;
-    font-weight:bold;
-    border-top: 5px solid var(--red);
-    cursor:default;
-}
-.footer a{
-    display:inline-block;
-    margin: 0 5px;
-    text-shadow: 1px 1px 0px var(--white);
-    text-decoration:none;
-    transition: all 0.2s;
-}
-.footer a:hover {
-    color: var(--red);
-}
+/* NAVIGATION */
 
 .nav {
-    position:absolute;
-    top: 50%;
-    width: 100vw;
+    width: 100%;
     background: var(--lightblue);
     border-bottom: 5px solid var(--red);
     display:flex;
@@ -85,7 +60,7 @@ h1 {
     background:transparent;
     text-shadow: 1px 1px 0px var(--white);
     text-decoration:none;
-    font-family:'Shrikhand', cursive;
+    font-family: var(--font);
     font-size: 1.5em;
     cursor:pointer;
     transition: all 0.5s;
@@ -95,15 +70,71 @@ h1 {
     color: var(--white);
     text-shadow: 1px 1px 0px var(--red);
 }
+/* MAIN */
 
-#mainBody {
-    position: absolute;
-    top: 57%;
-    width: 100vw;
+#mainBody {width: 100%;}
+.mainContent {padding: 20px;}
+
+#inner {
+    width: 100%;
+    min-height: 35vh;
+    white-space: pre-line;
 }
-.mainContent {
-    padding: 20px;
+
+/* HOME PAGE */
+
+.homeImage {
+    float: left;
+    width: 450px;
+    height: 250px;
+    background: url("../images/pexels-jean-balzan-675439.jpg") center/cover;
+    margin: 0 20px;
+    border-radius: 25px;
+    box-shadow: 4px 6px 4px rgba(0,0,0,0.3);
+    text-align:center;
 }
+.homeImage #text {
+    background: transparent;
+    padding: 25% 0;
+    font-family: var(--font);
+    color: var(--white);
+    text-shadow: 2px 2px 2px var(--darkblue);
+    font-size: 25px;
+    cursor: default;
+    transition: all 0.5s;
+}
+.homeImage:hover #text{
+    font-size: 28px;
+}
+
+h1#homeHeader {
+    color: var(--medblue);
+    text-shadow: 2px 2px 4px var(--lightblue);
+}
+
+/* FOOTER */
+
+.footer {
+    clear: both;
+    background: var(--lightblue);
+    padding: 10px 0;
+    width: 100%;
+    text-align:center;
+    white-space: pre;
+    font-variant:small-caps;
+    font-weight:bold;
+    border-top: 5px solid var(--red);
+    cursor:default;
+}
+.footer a{
+    display:inline-block;
+    margin: 0 5px;
+    text-shadow: 1px 1px 0px var(--white);
+    text-decoration:none;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+.footer a:hover {color: var(--red);}
 
 
 

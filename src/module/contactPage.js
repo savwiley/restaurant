@@ -1,18 +1,21 @@
-function conTest() {
+function init() {
     const mainContent = document.querySelector(".mainContent");
     const inner = document.getElementById("inner");
         inner.remove();
-    const testing = document.createElement("div");
-        testing.setAttribute("id", "inner");
-        testing.style.width = "100px";
-        testing.style.height = "100px";
-        testing.style.background = "red";
-        mainContent.appendChild(testing);
-    mainContent.style.background = "gold";
+    const body = document.createElement("div");
+        body.setAttribute("id", "inner");
+        mainContent.appendChild(body);
 };
 
+function fillInner() {
+    const body = document.getElementById("inner");
+        body.style.background = "pink";
+        body.textContent = "yoooo";
+}
+
 function contactPage() {
-    conTest();
+    init();
+    fillInner();
 };
 
 export default contactPage;

@@ -1,18 +1,22 @@
-function menuTest() {
+function init() {
     const mainContent = document.querySelector(".mainContent");
     const inner = document.getElementById("inner");
         inner.remove();
-    const testing = document.createElement("div");
-        testing.setAttribute("id", "inner");
-        testing.style.width = "100px";
-        testing.style.height = "100px";
-        testing.style.background = "green";
-        mainContent.appendChild(testing);
-    mainContent.style.background = "hotpink";
+    const body = document.createElement("div");
+        body.setAttribute("id", "inner");
+        body.textContent = "I'm a menu";
+        mainContent.appendChild(body);
 };
 
+function fillInner() {
+    const body = document.getElementById("inner");
+        body.style.background = "green";
+        body.textContent = "yoooo";
+}
+
 function menuPage() {
-    menuTest();
+    init();
+    fillInner();
 };
 
 export default menuPage;

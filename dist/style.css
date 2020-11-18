@@ -17,6 +17,27 @@
 }
 a {background:transparent;}
 
+
+h1 {
+    background: transparent;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px var(--darkblue);
+    color: var(--white);
+    cursor:default;
+    font-size: 3em;
+    font-family: var(--font);
+}
+
+h2 {
+    background: transparent;
+    font-family: var(--font);
+    color: var(--darkblue);
+    text-shadow: 2px 2px 0px var(--lightblue);
+    font-size: 20px;
+    text-decoration: underline;
+    cursor: default;
+}
+
 /* HEADER */
 
 .header {
@@ -33,15 +54,6 @@ a {background:transparent;}
     background: transparent;
     margin-top: 20px;
     transition: all 0.5s;
-}
-h1 {
-    background: transparent;
-    margin-top: 20px;
-    text-shadow: 2px 2px 4px var(--darkblue);
-    color: var(--white);
-    cursor:default;
-    font-size: 3em;
-    font-family: var(--font);
 }
 .header:hover #logo {margin-top: 10px;}
 
@@ -110,6 +122,29 @@ h1 {
 h1#homeHeader {
     color: var(--medblue);
     text-shadow: 2px 2px 4px var(--lightblue);
+}
+
+/* CONTACT PAGE */
+
+.info {
+    width: 25%;
+    float: left;
+    padding-left: 5%;
+}
+
+#formHeader {
+    color: var(--medblue);
+    text-shadow: 2px 2px 4px var(--lightblue);
+    text-align:center;
+}
+
+.form {
+    background: pink;
+    text-align:right;
+}
+
+input {
+    margin: 0 10px;
 }
 
 /* FOOTER */

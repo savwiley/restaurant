@@ -24,7 +24,6 @@ function locationInfo() {
                 info.appendChild(secLocHeader);
             const otherAddress = document.createElement("span");
 
-                /* put this stuff into an object */
                 otherAddress.textContent = "2779 Patterson Rd. \r\n";
                 otherAddress.textContent += "Garden City, NY 11530 \r\n";
                 otherAddress.textContent += "555-555-3665 \r\n \r\n";
@@ -59,13 +58,40 @@ function contactForm() {
         const form = document.createElement("form");
             form.setAttribute("class", "form");
 
-            form.textContent = "Name:";
+            const nameForm = document.createElement("label");
+                nameForm.textContent = "Name:";
+                form.appendChild(nameForm);
+
             const nameField = document.createElement("input");
                 form.appendChild(nameField);
 
-            form.textContent = "E-mail:";
+            const emailForm = document.createElement("label");
+                emailForm.textContent = "\r\n Email:";
+                form.appendChild(emailForm);
+
             const emailField = document.createElement("input");
                 form.appendChild(emailField);
+
+            const subForm = document.createElement("label");
+                subForm.textContent = "\r\n Subject:";
+                form.appendChild(subForm);
+    
+            const subField = document.createElement("input");
+                form.appendChild(subField);
+
+            const commForm = document.createElement("label");
+                commForm.textContent = "\r\n Comment:";
+                form.appendChild(commForm);
+        
+            const commField = document.createElement("textarea");
+                commField.setAttribute("id", "commField");
+                form.appendChild(commField);
+
+            const submitBtn = document.createElement("input");
+                submitBtn.setAttribute("type", "submit");
+                submitBtn.setAttribute("value", "Submit");
+                submitBtn.setAttribute("id", "submitBtn");
+                form.appendChild(submitBtn);
                 
             body.appendChild(form);
 }

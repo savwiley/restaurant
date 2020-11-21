@@ -8,7 +8,7 @@
     --red: #E63946;
     --font: 'Shrikhand', cursive;
 }
-* {
+body {
     background: var(--white);
     color: var(--darkblue);
     margin: 0;
@@ -26,6 +26,7 @@ h1 {
     cursor:default;
     font-size: 3em;
     font-family: var(--font);
+    line-height: 10px;
 }
 
 h2 {
@@ -124,6 +125,73 @@ h1#homeHeader {
     text-shadow: 2px 2px 4px var(--lightblue);
 }
 
+/* MENU PAGE */
+
+.flavors {
+    border: 5px dashed var(--lightblue);
+    width: 60%;
+    padding: 10px 0;
+    margin: 0 auto 40px;
+    border-radius: 25px;
+    text-align:center;
+}
+#flavHeader {
+    color: var(--medblue);
+    text-align:center;
+    text-shadow: 2px 2px 4px var(--lightblue);
+}
+#columnOne, #columnTwo, #columnThree {
+    display:inline-block;
+    width: 33%;
+}
+.warnings {
+    margin-top: 40px;
+    font-weight: bold;
+}
+#vegan, #sugar, #nuts {
+    display:inline-block;
+    width: 33%;
+}
+
+.menuItem {
+    width: 60%;
+    height: 300px;
+    margin: 0 auto 40px;
+    border-radius: 25px;
+    text-align:center;
+    cursor:default;
+    overflow:hidden;
+}
+
+#menuTitle {
+    font-family: var(--font);
+    color: #fff;
+    padding-top: 100px;
+    font-size: 35px;
+    text-shadow: 3px 3px 3px var(--darkblue);
+}
+
+#menuPrice {
+    font-family: var(--font);
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px var(--darkblue);
+}
+
+#menuDesc {
+    position:relative;
+    top: 120px;
+    background: rgba(0,0,0,0.6);
+    padding-bottom: 100%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+.menuItem:hover #menuDesc {
+    top: 30px;
+}
+
 /* CONTACT PAGE */
 
 .info {
@@ -156,9 +224,7 @@ input, textarea {
     border: 3px solid var(--lightblue);
     transition: all 0.2s;
 }
-input:focus, textarea:focus {
-    box-shadow: 0px 0px 8px var(--medblue);
-}
+input:focus, textarea:focus {box-shadow: 0px 0px 8px var(--medblue);}
 
 #commField {
     height: 200px;
@@ -180,9 +246,7 @@ input:focus, textarea:focus {
     background-position: 0% 50%;
     background-size: 100%;
 }
-#submitBtn:active {
-    border: 3px solid var(--medblue);
-}
+#submitBtn:active {border: 3px solid var(--medblue);}
 
 /* FOOTER */
 

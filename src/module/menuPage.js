@@ -43,12 +43,23 @@ function flavors() {
                     warnNuts.textContent = "CONTAINS NUTS §";
                     warnings.appendChild(warnNuts);
                 flavBoard.appendChild(warnings);
+<<<<<<< HEAD
             const toppings = document.createElement("h1");
                 toppings.setAttribute("id", "toppings");
                 toppings.textContent = "Over 100 Toppings!"
                 flavBoard.appendChild(toppings);
 };
 
+=======
+};
+
+/*
+NON-DAIRY/VEGAN / SUGAR-FREE / CONTAINS NUTS
+
+BOWLS / CONES / SUNDAES / BANANA SPLITS / CAKES
+*/
+
+>>>>>>> 2ca9ebb9e290b7cc04de359fc9346fb62e730855
 function menu(img, title, desc, price) {
     const body = document.getElementById("inner");
         const itemCard = document.createElement("div");

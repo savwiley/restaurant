@@ -54,10 +54,7 @@ covid restrictions
 
 function homePage() {
     init();
-<<<<<<< HEAD
     covid();
-=======
->>>>>>> 2ca9ebb9e290b7cc04de359fc9346fb62e730855
     homeImage();
     blurb();
 };

@@ -36,10 +36,7 @@ h2 {
     text-shadow: 2px 2px 0px var(--lightblue);
     font-size: 20px;
     text-decoration: underline;
-<<<<<<< HEAD
     line-height: 5px;
-=======
->>>>>>> 2ca9ebb9e290b7cc04de359fc9346fb62e730855
     cursor: default;
 }
 
@@ -143,7 +140,6 @@ h2 {
 .homeImage:hover #text{
     font-size: 28px;
 }
-<<<<<<< HEAD
 
 h1#homeHeader {
     color: var(--medblue);
@@ -198,60 +194,6 @@ h1#homeHeader {
     text-shadow: 3px 3px 3px var(--darkblue);
 }
 
-=======
-
-h1#homeHeader {
-    color: var(--medblue);
-    text-shadow: 2px 2px 4px var(--lightblue);
-}
-
-/* MENU PAGE */
-
-.flavors {
-    border: 5px dashed var(--lightblue);
-    width: 60%;
-    padding: 10px 0;
-    margin: 0 auto 40px;
-    border-radius: 25px;
-    text-align:center;
-}
-#flavHeader {
-    color: var(--medblue);
-    text-align:center;
-    text-shadow: 2px 2px 4px var(--lightblue);
-}
-#columnOne, #columnTwo, #columnThree {
-    display:inline-block;
-    width: 33%;
-}
-.warnings {
-    margin-top: 40px;
-    font-weight: bold;
-}
-#vegan, #sugar, #nuts {
-    display:inline-block;
-    width: 33%;
-}
-
-.menuItem {
-    width: 60%;
-    height: 300px;
-    margin: 0 auto 40px;
-    border-radius: 25px;
-    text-align:center;
-    cursor:default;
-    overflow:hidden;
-}
-
-#menuTitle {
-    font-family: var(--font);
-    color: #fff;
-    padding-top: 100px;
-    font-size: 35px;
-    text-shadow: 3px 3px 3px var(--darkblue);
-}
-
->>>>>>> 2ca9ebb9e290b7cc04de359fc9346fb62e730855
 #menuPrice {
     font-family: var(--font);
     color: #fff;
@@ -263,7 +205,6 @@ h1#homeHeader {
     position:relative;
     top: 120px;
     background: rgba(0,0,0,0.6);
-<<<<<<< HEAD
     padding: 10px 10px 100% 10px;
     color: #fff;
     font-weight: bold;
@@ -272,30 +213,15 @@ h1#homeHeader {
 }
 .menuItem:hover #menuDesc {top: 0px;}
 /* ^ make this -100px in media */
-=======
-    padding-bottom: 100%;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    transition: all 0.5s;
-}
-.menuItem:hover #menuDesc {
-    top: 30px;
-}
->>>>>>> 2ca9ebb9e290b7cc04de359fc9346fb62e730855
 
 /* CONTACT PAGE */
 
 .info {
     width: 25%;
     float: left;
-<<<<<<< HEAD
     position:relative;
     left: 5%;
     top: -20px;
-=======
-    padding-left: 5%;
->>>>>>> 2ca9ebb9e290b7cc04de359fc9346fb62e730855
 }
 
 #formHeader {

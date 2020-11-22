@@ -39,6 +39,9 @@ function createBody() {
         mainBody.setAttribute("id", "mainBody");
             const mainContent = document.createElement("p");
             mainContent.setAttribute("class", "mainContent");
+                const inner = document.createElement("p");
+                inner.setAttribute("id", "inner");
+                mainContent.appendChild(inner);
             mainBody.appendChild(mainContent);
         content.appendChild(mainBody);
 };
@@ -65,12 +68,12 @@ function createFooter() {
         content.appendChild(footer);
 };
 
-const initialPageLoad = (() => {
+function initialPageLoad() {
     createHeader();
     createNav();
     createBody();
     createFooter();
-})();
+};
 
 
 export default initialPageLoad;
@@ -79,3 +82,5 @@ export default initialPageLoad;
 maybe add social media to footer*/
 
 /* images are too large for git, figure it out */
+
+/* https://theodinproject.com/lessons/restaurant-page */

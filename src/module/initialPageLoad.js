@@ -49,22 +49,52 @@ function createBody() {
 function createFooter() {
     const footer = document.createElement("footer");
         footer.setAttribute("class", "footer");
-        const gitCred = document.createElement("a");
-            gitCred.innerHTML = "by savwiley";
-            gitCred.href = "https://github.com/savwiley/restaurant";
-            footer.appendChild(gitCred);
-        const wpCred = document.createElement("a");
-            wpCred.innerHTML = "made with webpack";
-            wpCred.href = "https://github.com/savwiley/restaurant";
-            footer.appendChild(wpCred);
-        const pexelsCred = document.createElement("a");
-            pexelsCred.innerHTML = "images from pexels";
-            pexelsCred.href = "https://github.com/savwiley/restaurant";
-            footer.appendChild(pexelsCred);
-        const logoCred = document.createElement("a");
-            logoCred.innerHTML = "logo from freepik";
-            logoCred.href = "https://github.com/savwiley/restaurant";
-            footer.appendChild(logoCred);
+        const foot = document.createElement("div");
+            foot.setAttribute("id", "foot");
+            footer.appendChild(foot);
+
+            const location = document.createElement("div");
+                location.setAttribute("id", "footLoc");
+                location.textContent = "4973 Lake Forest Dr. \r\nGarden City, NY 11530 \r\n555-555-8403";
+                foot.appendChild(location);
+
+            const social = document.createElement("div");
+                social.setAttribute("id", "social");
+                const twitter = document.createElement("i");
+                    twitter.setAttribute("class", "fab fa-twitter");
+                    social.appendChild(twitter);
+                const facebook = document.createElement("i");
+                    facebook.setAttribute("class", "fab fa-facebook-f");
+                    social.appendChild(facebook);
+                const yelp = document.createElement("i");
+                    yelp.setAttribute("class", "fab fa-yelp");
+                    social.appendChild(yelp);
+                foot.appendChild(social);
+
+        const credits = document.createElement("div");
+            const gitCred = document.createElement("a");
+                const gitLogo = document.createElement("i");
+                    gitLogo.setAttribute("class", "fab fa-github");
+                    gitCred.appendChild(gitLogo);
+                gitCred.href = "https://github.com/savwiley/restaurant";
+                credits.appendChild(gitCred);
+            const wpCred = document.createElement("a");
+                wpCred.innerHTML = "\r\n made with webpack";
+                wpCred.href = "https://webpack.js.org/";
+                credits.appendChild(wpCred);
+            const pexelsCred = document.createElement("a");
+                pexelsCred.innerHTML = "images from pexels";
+                pexelsCred.href = "https://www.pexels.com/";
+                credits.appendChild(pexelsCred);
+            const logoCred = document.createElement("a");
+                logoCred.innerHTML = "logo from freepik";
+                logoCred.href = "https://www.freepik.com/";
+                credits.appendChild(logoCred);
+            const year = document.createElement("span");
+                year.textContent = "\r\n© 2020";
+                credits.appendChild(year);
+            footer.appendChild(credits);
+
         content.appendChild(footer);
 };
 

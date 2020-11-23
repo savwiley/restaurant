@@ -55,7 +55,7 @@ function createFooter() {
 
             const location = document.createElement("div");
                 location.setAttribute("id", "footLoc");
-                location.textContent = "4973 Lake Forest Dr. \r\nGarden City, NY 11530 \r\n555-555-8403";
+                location.textContent = "4973 Lake Forest Dr. \r\nGarden City, NY 11530 \r\n \r\n555-555-8403";
                 foot.appendChild(location);
 
             const social = document.createElement("div");
@@ -107,10 +107,3 @@ function initialPageLoad() {
 
 
 export default initialPageLoad;
-
-/* maybe change links to logo images 
-maybe add social media to footer*/
-
-/* images are too large for git, figure it out */
-
-/* https://theodinproject.com/lessons/restaurant-page */

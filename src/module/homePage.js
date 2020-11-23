@@ -46,12 +46,6 @@ function blurb() {
             body.appendChild(blurbText);
 }
 
-/*
-add pictures of "new flavors"
-something about the owners??
-covid restrictions
-*/
-
 function homePage() {
     init();
     covid();

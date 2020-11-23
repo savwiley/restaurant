@@ -8,9 +8,9 @@ This project was made almost entirely with Javascript. Information about the Res
 
 This site was made with [webpack](https://webpack.js.org/).
 
-Images are from [pexels](https://www.pexels.com/), [freepik](https://www.freepik.com/), and [fontawesome](fontawesome.com/).
+Images are from [pexels](https://www.pexels.com/), [freepik](https://www.freepik.com/), and [fontawesome](https://fontawesome.com/).
 
-Shrikhand font from [Google Fonts](fonts.google.com/).
+Shrikhand font from [Google Fonts](https://fonts.google.com/).
 
 ## License
 

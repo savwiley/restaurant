@@ -125,7 +125,7 @@ h2 {
     width: 350px;
     height: 200px;
     background: url("../images/pexels-jean-balzan-675439.jpg") center/cover;
-    margin: 0 20px;
+    margin: 0 20px 10px;
     border-radius: 25px;
     box-shadow: 4px 6px 4px rgba(0,0,0,0.3);
     text-align:center;
@@ -140,9 +140,7 @@ h2 {
     cursor: default;
     transition: all 0.5s;
 }
-.homeImage:hover #text{
-    font-size: 25px;
-}
+.homeImage:hover #text{font-size: 25px;}
 
 h1#homeHeader {
     color: var(--medblue);
@@ -215,7 +213,6 @@ h1#homeHeader {
     transition: all 0.5s;
 }
 .menuItem:hover #menuDesc {top: 0px;}
-/* ^ make this -100px in media */
 
 /* CONTACT PAGE */
 
@@ -288,10 +285,10 @@ input:focus, textarea:focus {box-shadow: 0px 0px 8px var(--medblue);}
     font-variant:small-caps;
     font-weight:bold;
     border-top: 5px solid var(--red);
+    overflow:hidden;
     cursor:default;
 }
 .footer a{
-    display:;
     margin: 0 5px;
     text-shadow: 1px 1px 0px var(--white);
     text-decoration:none;
@@ -303,39 +300,48 @@ input:focus, textarea:focus {box-shadow: 0px 0px 8px var(--medblue);}
 #footLoc, #social {
     display: inline-block;
     width: 45%;
+    margin-bottom: 20px;
 }
 #footLoc {
     text-align:left;
     padding-top: 15px;
 }
 #social {
-    letter-spacing: 5em;
-    text-align:right;
+    display:inline-flex;
+    justify-content: space-between;
+    text-shadow: 1px 1px 0px var(--white);
 }
 .fab {
     font-size: 35px;
     cursor: pointer;
     transition: all 0.2s;
 }
-.fab:hover {color: var(--red)};
+.fab:hover {color: var(--red)}
+.fa-github {font-size: 20px;}
 
+/* MOBILE */
 
-.fa-github {display:block};
-
-
-
-/*
-PALETTE FROM COOLORS.CO
-
-#E63946 - Imperial Red
-#F1FAEE - Honeydew
-#A8DADC - Powder Blue
-#457B9D - Celadon Blue
-#1D3557 - Prussian Blue
-
-https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557
-
-
-For logo (freepik): https://www.flaticon.com/search?word=ice%20cream
-
-*/
+@media (max-width: 1000px) {
+    h1, h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .covid {width: 95vw;}
+    .fab {font-size: 20px;}
+    .menuItem, .flavors {width: 90%;}
+    #columnOne, #columnTwo, #columnThree, .warnings {font-size: 12px;}
+    #menuTitle {padding-top: 50px;}
+    #menuDesc {top: 160px;}
+    .info {
+        float:none;
+        text-align: center;
+        width: 100%;
+    }
+    .form {
+        text-align:left;
+        margin-right: 0;
+    }
+    label {position: inherit;}
+    input, #commField {width: 90%;}
+    #submitBtn {margin-left: 20px;}
+}

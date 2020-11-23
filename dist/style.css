@@ -15,7 +15,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
-a {background:transparent;}
+a {
+    background:transparent;
+    color: var(--darkblue);
+}
 
 
 h1 {
@@ -119,8 +122,8 @@ h2 {
 
 .homeImage {
     float: left;
-    width: 450px;
-    height: 250px;
+    width: 350px;
+    height: 200px;
     background: url("../images/pexels-jean-balzan-675439.jpg") center/cover;
     margin: 0 20px;
     border-radius: 25px;
@@ -133,12 +136,12 @@ h2 {
     font-family: var(--font);
     color: var(--white);
     text-shadow: 2px 2px 2px var(--darkblue);
-    font-size: 25px;
+    font-size: 20px;
     cursor: default;
     transition: all 0.5s;
 }
 .homeImage:hover #text{
-    font-size: 28px;
+    font-size: 25px;
 }
 
 h1#homeHeader {
@@ -260,6 +263,7 @@ input:focus, textarea:focus {box-shadow: 0px 0px 8px var(--medblue);}
     width: 80px;
     margin-left: 90%;
     font-weight:bold;
+    background: #fff;
     background-size: 0;
     cursor:pointer;
     transition: all 0.5s, border 0s;
@@ -287,7 +291,7 @@ input:focus, textarea:focus {box-shadow: 0px 0px 8px var(--medblue);}
     cursor:default;
 }
 .footer a{
-    display:inline-block;
+    display:;
     margin: 0 5px;
     text-shadow: 1px 1px 0px var(--white);
     text-decoration:none;
@@ -295,6 +299,28 @@ input:focus, textarea:focus {box-shadow: 0px 0px 8px var(--medblue);}
     transition: all 0.2s;
 }
 .footer a:hover {color: var(--red);}
+
+#footLoc, #social {
+    display: inline-block;
+    width: 45%;
+}
+#footLoc {
+    text-align:left;
+    padding-top: 15px;
+}
+#social {
+    letter-spacing: 5em;
+    text-align:right;
+}
+.fab {
+    font-size: 35px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.fab:hover {color: var(--red)};
+
+
+.fa-github {display:block};
 
 
 
